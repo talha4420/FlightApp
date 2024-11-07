@@ -1,0 +1,45 @@
+[
+    {
+        "FlightId": "1",
+        "Origin": { "Code": "YUL", "Name": "Montreal Airport" },
+        "Destination": { "Code": "YYZ", "Name": "Toronto Airport" },
+        "Capacity": 20,
+        "Day": 1
+    },
+    {
+        "FlightId": "2",
+        "Origin": { "Code": "YUL", "Name": "Montreal Airport" },
+        "Destination": { "Code": "YYC", "Name": "Calgary Airport" },
+        "Capacity": 20,
+        "Day": 1
+    },
+    {
+        "FlightId": "3",
+        "Origin": { "Code": "YUL", "Name": "Montreal Airport" },
+        "Destination": { "Code": "YVR", "Name": "Vancouver Airport" },
+        "Capacity": 20,
+        "Day": 1
+    },
+    {
+        "FlightId": "4",
+        "Origin": { "Code": "YUL", "Name": "Montreal Airport" },
+        "Destination": { "Code": "YYZ", "Name": "Toronto Airport" },
+        "Capacity": 20,
+        "Day": 2
+    },
+    {
+        "FlightId": "5",
+        "Origin": { "Code": "YUL", "Name": "Montreal Airport" },
+        "Destination": { "Code": "YYC", "Name": "Calgary Airport" },
+        "Capacity": 20,
+        "Day": 2
+    },
+    {
+        "FlightId": "6",
+        "Origin": { "Code": "YUL", "Name": "Montreal Airport" },
+        "Destination": { "Code": "YVR", "Name": "Vancouver Airport" },
+        "Capacity": 20,
+        "Day": 2
+    }
+]
+
