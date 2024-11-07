@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-
-using App.Models;
+﻿using App.Models;
 using App.Services;
 
 IFlightService flightService =  new FlightService("data/flights.json");
@@ -15,7 +12,6 @@ foreach(Flight flight in flights){
 IOrderService orderService =  new OrderService("data/orders.json");
 var orders = await orderService.GetAllOrdersAsync();
 
-//order: order-001, flightNumber: 1, departure: <departure_city>, arrival: <arrival_city>, day: x
 
 IOrderSchedulingService orderSchedulingService = new OrderSchedulingService();
 await orderSchedulingService.ScheduleAllOrders(flights, orders);
@@ -24,6 +20,7 @@ foreach (var order in orders)
 {
     string orderId = order.Key;
     var flight = order.Value.flight;
+    //order: order-001, flightNumber: 1, departure: <departure_city>, arrival: <arrival_city>, day: x
     if(flight ==  null){
         Console.WriteLine($"order ID: {orderId}, flightNumber: , departure: , arrival: , day: ");
     }else{
