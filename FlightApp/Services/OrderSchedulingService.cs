@@ -7,10 +7,10 @@ public class OrderSchedulingService : IOrderSchedulingService
     {
         foreach(var order in orders.OrderBy(o=>o.Key)){
             var flight = flights.
-                Where(fl=> fl.Destination.Code == order.Value.Destination && fl.Capacity >0)
+                Where(fl=> fl.Destination.Code == order.Value.Destination && fl.FlightCount < fl.Capacity)
                 .OrderBy(o=> o.Day).FirstOrDefault();
             if(flight != null){
-                flight.Capacity--;
+                flight.FlightCount++;
                 order.Value.flight = flight;
             }
         }
